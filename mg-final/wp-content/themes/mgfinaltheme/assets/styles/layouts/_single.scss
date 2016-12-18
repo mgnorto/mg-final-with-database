@@ -1,0 +1,38 @@
+body.single {
+    article {
+        div.whole {
+            @include contain(absolute);
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            div.center-div {
+        @include contain(fixed);
+        border: 1px solid $borderColor;
+        width: 60%;
+        height: 60%;
+          top: 20%;
+          left: 20%;
+                
+                background-color: white;
+                opacity: .5;
+            }
+            div.center-div-text {
+            overflow: scroll;
+             @include contain(fixed);
+        border: 1px solid $borderColor;
+        width: 60%;
+        height: 60%;
+          top: 20%;
+          left: 20%;
+                h1 {
+                font-family: $bigFont;
+                    text-decoration: underline;
+                }
+        }
+        }
+        
+        
+    }
+    
+}

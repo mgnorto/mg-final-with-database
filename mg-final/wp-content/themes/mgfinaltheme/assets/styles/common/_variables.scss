@@ -1,0 +1,9 @@
+@mixin contain($pos) {
+    display: inline-block;
+    position: $pos;
+    box-sizing: border-box;
+}
+$borderColor: black;
+$bgColor: white;
+$littleFont: 'Yanone Kaffeesatz', sans-serif;
+$bigFont: 'Abril Fatface', cursive;

@@ -1,0 +1,36 @@
+body.contribute {
+    
+    h1.title {
+        display: block;
+        text-align: center;
+        font-size: 35px;
+        font-family: $bigFont;
+    }
+    a {
+        span {
+            @include contain(fixed);
+            border: 1px solid $borderColor;
+            right: 3%;
+            top: 15%;
+            
+        }
+    }
+    div.contribute-form {
+        @include contain(fixed);
+        width: 60%;
+        left: 20%;
+        height: 70%;
+        top: 15%;
+        form {
+            @include contain(relative);
+            width: 100%;
+            border: 1px solid $borderColor;
+            padding: 20px;
+            span, input, textarea {
+                @include contain(relative);
+                width: 50%;
+            }
+        }
+    }
+    
+}

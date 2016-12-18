@@ -1,0 +1,14 @@
+body {
+    font-family: $littleFont;
+    font-size: 20px;
+    .brand {
+        display: none; 
+    }
+    div.page-header {
+       h1 {
+        font-family: $bigFont;
+           font-size: 25px;
+        }   
+    }
+    
+}

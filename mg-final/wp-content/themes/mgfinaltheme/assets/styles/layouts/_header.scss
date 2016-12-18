@@ -1,0 +1,96 @@
+div.whole {
+    a {
+       div {
+            @include contain(fixed);
+            height: 50%;
+            width: 50%;
+            border: 1px solid $borderColor;
+           background-size: cover;
+           center {
+               h1 {
+                display: inline-block;
+                   position: relative;
+                top: 150px;
+                color: black;
+                   
+            }
+           }
+        }
+        div.top {
+            top: 0px;
+        }
+        div.bottom {
+            bottom: 0px;
+        }
+        div.left {
+            left: 0px;
+        }
+        div.right {
+            right: 0px;
+        }
+        div:hover {
+        cursor: pointer;
+        opacity: .5;
+            center {
+                h1 {
+                    opacity: 1;
+                    color: white;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+        
+    
+        
+}
+
+div.page-header {
+    @include contain(fixed);
+    width: 40%;
+    left: 30%;
+    border: 1px solid $borderColor;
+    background-color: $bgColor;
+    height: 10%;
+    top: 45%;
+    
+    h1 {
+        color: black;
+        text-align: center; 
+    }
+}
+ul {
+    li {
+        
+    }
+}
+ nav.nav-primary {
+        @include contain(fixed);
+        bottom: 5px;
+        width: 70%;
+        left: 15%;
+        z-index: 1;
+        div {
+            ul {
+                text-align: center;
+                li {
+                    list-style: none;
+                    @include contain(relative);
+                    padding: 10px;
+                    background-color: black;
+                    border: 1px solid $borderColor;
+                    a {
+                        color: white;
+                    text-decoration: none;
+                        cursor: pointer;
+                    }
+                    cursor: pointer;
+                }
+                li:hover {
+                    
+                    background-color: white;
+                    a {color: black;}
+                }
+            }
+        }
+    }
